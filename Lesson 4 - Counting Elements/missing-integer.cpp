@@ -3,8 +3,8 @@ using namespace std;
 
 int solution(vector<int> &a) {
   set<int> s;
-  for (int i = 0; i < a.size(); i++) {
-    s.insert(a[i]);
+  for (auto ai: a) {
+    s.insert(ai);
   }
   int n = 1;
   while (s.count(n) == 1) {
